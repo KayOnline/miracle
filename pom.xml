@@ -7,16 +7,16 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<artifactId>passion</artifactId>
 	<version>0.0.1</version>
 
+
 	<packaging>war</packaging>
-	<name>passion</name>
-	<description>
-		passion project using easyui and spring mvc framework.
-	</description>
+	<name>miracle</name>
+	<description>passion project using easyui and spring mvc framework.</description>
 	
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
 
 	<repositories>
 		<repository>
@@ -36,6 +36,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</repository>
 	</repositories>
 
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -48,7 +49,20 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</dependencies>
 	</dependencyManagement>
 
+
 	<dependencies>
+	
+		<!-- Example -->
+		<!-- 
+		<dependency>
+			<groupId></groupId>
+			<artifactId></artifactId>
+			<version></version>
+			<scope>compile/provided/runtime/test</scope>
+			<type>jar/war</type>
+		</dependency> 
+		-->
+
 
 		<!-- Servlet&JSP&JSTL -->
 		<dependency>
@@ -58,20 +72,20 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<scope>provided</scope>
+		</dependency>
 		
 		
-		<!-- FreeMaker -->
+		<!-- FreeMarker -->
 		<dependency>
 		    <groupId>freemarker</groupId>
 		    <artifactId>freemarker</artifactId>
@@ -176,11 +190,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</dependency>
 
 		<!-- JCP -->
-		<dependency>
-			<groupId>bouncycastle</groupId>
-			<artifactId>bcprov-jdk16</artifactId>
-			<version>140</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>bouncycastle</groupId> -->
+<!-- 			<artifactId>bcprov-jdk16</artifactId> -->
+<!-- 			<version>140</version> -->
+<!-- 		</dependency> -->
 
 		<!-- Unit Test -->
 		<dependency>
@@ -213,15 +227,15 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 
 		<dependency>
-			<groupId>org.apache.directory.studio</groupId>
-			<artifactId>org.apache.commons.codec</artifactId>
-			<version>1.8</version>
+		    <groupId>commons-codec</groupId>
+		    <artifactId>commons-codec</artifactId>
+		    <version>1.1</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.jacob</groupId>
-			<artifactId>jacob</artifactId>
-			<version>1.17</version>
+		    <groupId>net.sf.jacob-project</groupId>
+		    <artifactId>jacob</artifactId>
+		    <version>1.14.3</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-net</groupId>
@@ -365,11 +379,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</dependency>
 
 
-		<!-- Oracle -->
+		<!-- JDBC -->
 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.1.0</version>
+		    <groupId>cn.guoyukun.jdbc</groupId>
+		    <artifactId>oracle-ojdbc6</artifactId>
+		    <version>11.2.0.3.0</version>
 		</dependency>
 	</dependencies>
 
